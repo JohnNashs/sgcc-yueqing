@@ -5,5 +5,6 @@
  */
 
 export { default as log } from '@/libs/log'
-export * from '@/libs/utils'
+// export * from '@/libs/utils'
 export * from '@/libs/request'
+export * from '@/libs/wxsdk'
