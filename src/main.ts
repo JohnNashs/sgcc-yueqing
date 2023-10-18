@@ -6,10 +6,11 @@ import { log, wxInit } from '@/libs'
 
 import './assets/css/main.scss'
 import 'virtual:uno.css'
+import type { IShareData } from '@/libs/utils'
 
 log()
 
-const shareData = {
+const shareData: IShareData = {
     disabled: true,
     title: '三门县智慧美食地图',
     desc: '鲜甜三门，等你来尝~',

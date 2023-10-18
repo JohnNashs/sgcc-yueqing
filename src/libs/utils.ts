@@ -90,7 +90,7 @@ async function wxInit(shareData: IShareData) {
 
 // 分享数据
 export interface IShareData {
-    disabled: true
+    disabled?: true
     title: string
     desc: string
     link: string

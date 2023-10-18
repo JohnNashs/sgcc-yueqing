@@ -6,6 +6,7 @@
 import axios from 'axios'
 import qs from 'qs'
 import wx from 'weixin-js-sdk'
+import type { IShareData } from '@/libs/utils'
 
 // 获取微信参数
 function getConfig() {
@@ -31,9 +32,9 @@ function getConfig() {
     })
 }
 
-const wxInit = async shareData => {
-    const res = await getConfig()
-    const data = res.data
+const wxInit = async (shareData: IShareData) => {
+    const res: any = await getConfig()
+    const data: any = res.data
     wx.config({
         debug: false,
         appId: data.appId,
