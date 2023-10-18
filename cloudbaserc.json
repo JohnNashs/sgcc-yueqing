@@ -9,7 +9,7 @@
                 "inputs": {
                     "buildCommand": "npm run build",
                     "outputPath": "/dist",
-                    "cloudPath": "/vue3-quick-start"
+                    "cloudPath": "/apps/vue3-quick-start"
                 }
             }
         }
