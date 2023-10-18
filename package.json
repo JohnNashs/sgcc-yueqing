@@ -6,6 +6,7 @@
     "scripts": {
         "dev": "vite",
         "build": "pnpm type-check && pnpm build-only",
+        "deploy": "cloudbase framework:deploy",
         "preview": "vite preview",
         "test:unit": "vitest",
         "test:e2e": "start-server-and-test preview http://localhost:4173 'cypress run --e2e'",
@@ -33,7 +34,7 @@
         "@commitlint/config-conventional": "^17.6.6",
         "@release-it/conventional-changelog": "^7.0.0",
         "@rushstack/eslint-patch": "^1.2.0",
-        "@tsconfig/node18": "^18.2.2",
+        "@tsconfig/node18": "^2.0.1",
         "@types/jsdom": "^21.1.1",
         "@types/node": "^18.16.17",
         "@types/qs": "^6.9.8",
