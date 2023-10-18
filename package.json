@@ -5,7 +5,7 @@
     "packageManager": "pnpm@7.6.0",
     "scripts": {
         "dev": "vite",
-        "build": "npm type-check && npm build-only",
+        "build": "npm run type-check && npm run build-only",
         "deploy": "cloudbase framework:deploy",
         "preview": "vite preview",
         "test:unit": "vitest",
