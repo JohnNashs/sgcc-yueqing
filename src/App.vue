@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import { IShareData } from '@/libs/utils'
+import type { IShareData } from '@/libs/utils'
 import { wxInit } from '@/libs'
 import HomeView from '@/views/HomeView/index.vue'
 

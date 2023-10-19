@@ -38,7 +38,7 @@
     </div>
 </template>
 <script setup lang="ts">
-const bannerList = reactive([
+const bannerList: any = reactive([
     new URL('../../assets/img/banner1.jpg', import.meta.url).href,
     new URL('../../assets/img/banner2.jpg', import.meta.url).href,
     new URL('../../assets/img/banner3.jpg', import.meta.url).href,
@@ -48,13 +48,13 @@ const bannerList = reactive([
     new URL('../../assets/img/banner7.jpg', import.meta.url).href
 ])
 
-const codeList = reactive({
+const codeList: any = reactive({
     wx: new URL('../../assets/img/code-wx.png', import.meta.url).href,
     app: new URL('../../assets/img/code-app.png', import.meta.url).href,
     power: new URL('../../assets/img/code-power.png', import.meta.url).href
 })
 
-const contactImg = ref('')
+const contactImg = ref<string>('')
 
 const show = ref(false)
 
