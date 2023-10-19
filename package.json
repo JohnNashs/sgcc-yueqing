@@ -72,7 +72,8 @@
     "lint-staged": {
         "*.{js,jsx,ts,tsx,vue}": [
             "npm run lint",
-            "git add ."
+            "git add .",
+            "npm run type-check"
         ]
     },
     "config": {
