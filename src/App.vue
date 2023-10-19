@@ -1,11 +1,11 @@
 <template>
-    <RouterView />
+    <HomeView />
 </template>
 
 <script setup lang="ts">
-import { RouterView } from 'vue-router'
 import { IShareData } from '@/libs/utils'
 import { wxInit } from '@/libs'
+import HomeView from '@/views/HomeView/index.vue'
 
 onBeforeMount(() => {
     // @ts-ignore
