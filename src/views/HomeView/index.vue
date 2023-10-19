@@ -6,7 +6,7 @@
             <div class="home-title">乐清电力真诚为您服务！</div>
         </div>
         <div class="home-banner">
-            <van-swipe lazy-render :autoplay="false" indicator-color="#63BFC8">
+            <van-swipe lazy-render :autoplay="3000" indicator-color="#63BFC8">
                 <van-swipe-item v-for="(src, idx) in bannerList" :key="idx">
                     <img class="home-banner-img" :src="src" :alt="src" />
                 </van-swipe-item>
