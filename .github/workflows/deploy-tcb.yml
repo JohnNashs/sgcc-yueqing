@@ -30,18 +30,18 @@ jobs:
             # Node版本
             -   name: Setup Node.js v16
                 uses: actions/setup-node@v3
-
-            # 安装依赖
-            -   name: Install NodeModules - 安装依赖
-                run: npm install
-
-            # 打包
-            -   name: Build - 打包
-                run: npm run build
-
-            # 打包结果
-            -   name: Build Status - 打包结果
-                run: cd dist && ls -ll
+#
+#            # 安装依赖
+#            -   name: Install NodeModules - 安装依赖
+#                run: npm install
+#
+#            # 打包
+#            -   name: Build - 打包
+#                run: npm run build
+#
+#            # 打包结果
+#            -   name: Build Status - 打包结果
+#                run: cd dist && ls -ll
 
             # 云开发部署
             -   name: Deploy to Tencent CloudBase
