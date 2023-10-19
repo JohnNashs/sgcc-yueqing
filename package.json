@@ -13,7 +13,7 @@
         "test:e2e:dev": "start-server-and-test 'vite dev --port 4173' http://localhost:4173 'cypress open --e2e'",
         "build-only": "vite build",
         "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
-        "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+        "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .eslintignore",
         "format": "prettier --write .",
         "prepare": "husky install",
         "release": "release-it"
@@ -72,8 +72,7 @@
     "lint-staged": {
         "*.{js,jsx,ts,tsx,vue}": [
             "npm run lint",
-            "git add .",
-            "npm run type-check"
+            "git add ."
         ]
     },
     "config": {

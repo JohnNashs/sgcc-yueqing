@@ -3,7 +3,7 @@
         <div class="absolute homer-water-mark"></div>
         <div class="home-header">
             <div class="home-logo"></div>
-            <div class="home-title">您好，欢迎使用网上国网</div>
+            <div class="home-title">乐清电力真诚为您服务！</div>
         </div>
         <div class="home-banner">
             <van-swipe lazy-render :autoplay="false" indicator-color="#63BFC8">

@@ -18,6 +18,7 @@ node_modules/
 .husky
 .local
 
-!.prettierrc.js
+.prettierrc.js
 components.d.ts
 auto-imports.d.ts
+wxapp/
