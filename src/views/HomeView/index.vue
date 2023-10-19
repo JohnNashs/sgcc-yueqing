@@ -13,7 +13,7 @@
             </van-swipe>
         </div>
         <div class="home-contact">
-            <a class="home-contact-phone home-contact-btn" href="tel:4000-000-000"></a>
+            <a class="home-contact-phone home-contact-btn" href="tel:0577 62271162"></a>
             <div class="home-contact-more flex">
                 <div class="flex flex-col gap13px">
                     <div class="home-contact-wx home-contact-btn" @click="handleContact('wx')"></div>

@@ -72,10 +72,12 @@
     }
     :deep {
         .van-popup__close-icon {
-            font-size: 40px;
-            font-weight: bold;
-            top: 12vw;
-            right: 6vw;
+            font-size: 10vw;
+            top: 10vw;
+            right: 4vw;
+            &:before {
+                font-weight: bold;
+            }
         }
     }
     .home-contact-dialog {
