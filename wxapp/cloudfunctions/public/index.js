@@ -5,26 +5,26 @@ cloud.init()
 
 // 云函数入口函数
 exports.main = async (event, context) => {
-  const wxContext = cloud.getWXContext()
+    const wxContext = cloud.getWXContext()
 
-  switch (event.action) {
-    case 'getUrlScheme': {
-      return getUrlScheme()
+    switch (event.action) {
+        case 'getUrlScheme': {
+            return getUrlScheme()
+        }
     }
-  }
 
-  return 'action not found'
+    return 'action not found'
 }
 
 async function getUrlScheme() {
-  return cloud.openapi.urlscheme.generate({
-    jumpWxa: {
-      path: '/page/component/index', // <!-- replace -->
-      query: '',
-    },
-    // 如果想不过期则置为 false，并可以存到数据库
-    isExpire: false,
-    // 一分钟有效期
-    expireTime: parseInt(Date.now() / 1000 + 60),
-  })
+    return cloud.openapi.urlscheme.generate({
+        jumpWxa: {
+            path: '/page/component/index', // <!-- replace -->
+            query: '',
+        },
+        // 如果想不过期则置为 false，并可以存到数据库
+        isExpire: false,
+        // 一分钟有效期
+        expireTime: parseInt(Date.now() / 1000 + 60),
+    })
 }
