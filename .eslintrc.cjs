@@ -39,6 +39,7 @@ module.exports = {
             {
                 ignores: ['index'] // 需要忽略的组件名
             }
-        ]
+        ],
+        'vue/no-deprecated-v-is': 'warn' // 禁止使用已废弃的 v-is 指令
     }
 }

@@ -54,7 +54,8 @@ const wxInit = async (shareData: IShareData) => {
             // 'checkJsApi',
             // 'hideAllNonBaseMenuItem',
             // 'hideOptionMenu'
-        ]
+        ],
+        openTagList: ['wx-open-launch-weapp'] // 填入打开小程序的开放标签名
     })
     // wx.hideOptionMenu();
     wx.ready(function () {

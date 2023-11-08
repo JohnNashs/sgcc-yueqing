@@ -65,7 +65,15 @@
             height: 208px;
             background-image: url("../../assets/img/home-btn-app.png");
         }
+        .home-contact-power-btn {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
         .home-contact-power {
+            position: relative;
             width: 333px;
             height: 428px;
             background-image: url("../../assets/img/home-btn-buy.png");

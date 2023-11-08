@@ -1,4 +1,4 @@
-import { createApp } from 'vue'
+import Vue, { createApp } from 'vue'
 import App from './App.vue'
 import { log } from '@/libs'
 
@@ -8,5 +8,4 @@ import 'virtual:uno.css'
 log()
 
 const app = createApp(App)
-
 app.mount('#app')

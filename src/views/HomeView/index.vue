@@ -19,7 +19,20 @@
                     <div class="home-contact-wx home-contact-btn" @click="handleContact('wx')"></div>
                     <div class="home-contact-app home-contact-btn" @click="handleContact('app')"></div>
                 </div>
-                <div class="home-contact-power home-contact-btn" @click="handleContact('power')"></div>
+
+                <div class="home-contact-power home-contact-btn">
+                    <wx-open-launch-weapp
+                        class="home-contact-power-btn"
+                        appid="wx5899bdb8721621d6"
+                        path="/pages/index/index"
+                        username="gh_56b2c43416a4"
+                        style="position: absolute; left: 0; top: 0; right: 0; bottom: 0"
+                    >
+                        <div v-is="'script'" type="text/wxtag-template">
+                            <div style="position: absolute; left: 0; top: 0; right: 0; bottom: 0"></div>
+                        </div>
+                    </wx-open-launch-weapp>
+                </div>
             </div>
         </div>
 
@@ -38,6 +51,11 @@
     </div>
 </template>
 <script setup lang="ts">
+defineOptions({
+    name: 'HomeView',
+    title: '首页'
+})
+
 const bannerList: any = reactive([
     new URL('../../assets/img/banner1.jpg', import.meta.url).href,
     new URL('../../assets/img/banner2.jpg', import.meta.url).href,
@@ -67,11 +85,6 @@ const handleContact = (type: string) => {
     }
     show.value = true
 }
-
-defineOptions({
-    name: 'HomeView',
-    title: '首页'
-})
 </script>
 <style lang="scss" scoped>
 @import './index.scss';
